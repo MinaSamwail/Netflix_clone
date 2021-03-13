@@ -5,8 +5,16 @@ function App() {
   return (
     <div className="App">
       <h1>Salut</h1>
-      <Row title="Netflix Originals" fetchUrl={request.fetchNetflixOriginals} />
+      <Row
+        title="Netflix Originals"
+        fetchUrl={request.fetchNetflixOriginals}
+        isLargeRow
+      />
       <Row title="Trending Now" fetchUrl={request.fetchTrending} />
+      <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
+      <Row title="Comedy Movies" fetchUrl={request.fetchComedyMovies} />
+      <Row title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
+      <Row title="Documentaries" fetchUrl={request.fetchDocumentaries} />
     </div>
   );
 }
