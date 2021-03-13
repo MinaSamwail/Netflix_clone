@@ -16,7 +16,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       // you get the url from axios and completed with fetchUrl who is a props that you defined in App.js
       const request = await axios.get(fetchUrl);
       setMovies(request.data.results);
-      console.log("Request", request.data.results);
+      //   console.log("Request", request.data.results);
       return request;
     }
     fetchData();
